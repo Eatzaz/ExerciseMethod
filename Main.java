@@ -24,14 +24,10 @@ public class Main {
         }
         return number;
     }
-    public static String passwordrules(String pass){
-//        String charc="*.[a-z].*";
-        String Digit="1234567890";
-        String punctuation ="()*&^%$#@!-+=";
-if(pass.length()>=8 && Digit.length()>=2 && pass!=punctuation){
-    System.out.println("Password is valid: "+pass);
-}
-        return pass;
+   public static void ch(){
+        System.out.println("1. A password must have at least eight characters.   ");
+        System.out.println("2. A password consists of only letters and digits.   ");
+        System.out.println("3. A password must contain at least two digits    ");
     }
 
     public static void main(String[] args) {
@@ -46,13 +42,7 @@ if(pass.length()>=8 && Digit.length()>=2 && pass!=punctuation){
         checked(number);
 //3 - Write a Java method to check whether a string is a valid password.
 //Password rules:
-        System.out.println("Password rules:" +
-                " 1. A password must have at least eight characters.\n"+
-        "2. A password consists of only letters and digits.\n"+
-        "3. A password must contain at least two digits "          );
-        System.out.println("Enter the password:");
-        String pass=input.next();
-        passwordrules(pass);
+       ch();
     }
 
 }
